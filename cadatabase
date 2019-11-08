@@ -1,0 +1,149 @@
+CREATE DATABASE ca;
+DROP DATABASE if exists ca;
+use ca;
+
+CREATE TABLE empresas (
+    id_empresa int (2) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    name_e varchar (30),
+    empresa INT(2)
+ 
+);
+
+INSERT INTO empresas (name_e, empresa) VALUES 
+
+('LA PALMA', '23456'),
+('Grupo Azul', '23458');
+
+
+CREATE TABLE usuario (
+    usuario_id int (2) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    name varchar(30),
+    user_n INT(5)
+
+); 
+
+INSERT INTO usuario (name, user_n) VALUES
+
+('DIANA TREJO', '12345');
+
+CREATE TABLE marca  (
+    id_m int (2) PRIMARY KEY  NOT NULL AUTO_INCREMENT,
+    brand varchar(30)
+); 
+
+INSERT INTO marca (brand) Values 
+('HP' ),
+( 'Leonovo');
+
+CREATE TABLE departamento  (
+    id_depto int (2) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    depto varchar(25),
+    number_d int (5)
+); 
+
+INSERT INTO departamento (depto, number_d)  VALUES
+('Sistemas', '12345'),
+('Recursos Humanos', '23456');
+
+CREATE TABLE categoria (
+id_categoria int (3) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+categoriaa int (3),
+name_c varchar (15)
+);
+
+INSERT INTO categoria (categoriaa, name_c) VALUES
+('1', 'impresora'), ('2', 'computadora');
+
+CREATE TABLE so  (
+    id_so int (2) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    name varchar(25)
+    
+);
+
+INSERT INTO so (name) VALUES
+('Wndows'),
+('Linux');
+
+CREATE TABLE procesador  (
+    id_pr int (2) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    name_p varchar(25)
+    
+);
+
+INSERT INTO procesador (name_p) VALUES
+('i7'),
+('i5');
+
+CREATE TABLE ram (
+    id_ram int (2) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    ram varchar (10)
+);
+
+INSERT INTO ram  (ram) VALUES
+('6gb'),
+('8gb');
+
+CREATE TABLE discoduro (
+id_dc INT (2) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+discod varchar (15)
+);
+
+INSERT INTO discoduro (discod) VALUES
+('500gb'), ('1tb');
+
+CREATE TABLE caracteristicas (
+id_ca INT (2) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+especificaciones text
+);
+
+INSERT INTO caracteristicas (especificaciones) VALUES
+('impresora multifuncional, con impresion a blanco y negro'), ('laptop con puertos usb tipo c ');
+
+CREATE TABLE unidad (
+id_unidad INT (5) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+inventario INT (5),
+serie INT (6),
+modelo varchar (10)
+);
+
+INSERT INTO unidad (inventario, serie, modelo) VALUES 
+('2345', '344546754','cd45tg1'), ('3456', '345664', '58efjd');
+
+CREATE TABLE mantenimiento (
+id_m INT (5) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+mantenimientosanuales INT (2), 
+prox_m date,
+um6 date,
+um5 date,
+um4 date,
+um3 date,
+um2 date,
+um1 date 
+);
+
+INSERT INTO mantenimiento (mantenimientosanuales, um1, um2, um3, um4, um5, um6, prox_m) VALUES
+('4',"2020-06-21","2020-03-21","2019-12-21" ,"2019-09-21", "2019-06-21", "2019-03-21", "2019-01-21");
+
+
+
+
+
+
+
+
+
+
+DROP DATABASE ca;
+
+SELECT * FROM empresas;
+SELECT * FROM usuario;
+SELECT * FROM marca;
+SELECT * FROM departamento;
+SELECT * FROM categoria;
+SELECT * FROM so;
+SELECT * FROM procesador;
+SELECT * FROM ram; 
+SELECT * FROM discoduro;
+SELECT * FROM caracteristicas;
+SELECT * FROM unidad;
+SELECT * FROM mantenimiento;
