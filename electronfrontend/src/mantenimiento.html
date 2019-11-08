@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html class="scrollable">
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Sistema de regristro y control de mantenimiento a equipos de cómputo</title>
+    <link rel="stylesheet" href="photon.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+
+    <div class="mainWrapper">
+      <h1>CONTROL DE MANTENIMIENTOS </h1>
+
+      <label> Busca la unidad requerida</label>
+      <form>
+        <div class="form-group">
+          <label>Ingresa el departamento:</label>
+          <input id="deptobusqueda" type="data" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Ingresa el usuario:</label>
+          <input id="usuariobusqueda" type="data" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Ingresa el numero de inventario:</label>
+          <input id="inventariobusqueda" type="data" class="form-control">
+        </div>
+          <button id="btnbusqueda" class="btn btn-default">Buscar</button>
+        <div class="form-group">
+          <label>
+
+            Ingresa el número de mantenimientos por año de esta unidad (1-12)</label>
+          <input id="mxa" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Fecha próximo mantenimiento: </label>
+          <input id="proxm" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Fecha último mantenimiento </label>
+          <input id="um6" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Fecha mantenimiento </label>
+          <input id="um5" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Fecha mantenimiento </label>
+          <input id="um4" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Fecha mantenimiento </label>
+          <input id="um3" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Fecha mantenimiento </label>
+          <input id="um2" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Fecha mantenimiento </label>
+          <input id="um1" type="text" class="form-control">
+        </div>
+
+
+      </form>
+      <button id="btnGuardar" class="btn btn-default">Guardar</button>
+      <button id="btnEditar" class="btn btn-default">Editar</button>
+      <button id="btnDelete" class="btn btn-default">Eliminar</button>
+      <button id="btnPrint" class="btn btn-default">Imprimir reporte</button>
+    </div>
+    <script>
+   require('src/add.js')
+ </script>
+
+  </body>
+</html>
